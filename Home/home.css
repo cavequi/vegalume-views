@@ -1,6 +1,6 @@
 @import url(../shared.css);
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -22,8 +22,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1vw;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 header a {
@@ -33,6 +33,11 @@ header a {
 
 header a:hover {
     text-decoration: underline;
+}
+
+.btn-minha-conta,
+.btn-sair {
+    display: none;
 }
 
 #logo-section {
@@ -310,7 +315,7 @@ footer img {
     height: 7vw;
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: var(--branco);
 }
@@ -326,16 +331,16 @@ footer a{
     justify-content: space-between;
 }
 
-#direita div{
+#direita div {
     display: flex;
     flex-direction: column;
 }
 
-#direita div a{
+#direita div a {
     margin-bottom: 1.6vw;
 }
 
-#esquerda p{
+#esquerda p {
     margin-top: 0;
 }
 
@@ -347,12 +352,7 @@ footer a{
     justify-content: space-between;
 }
 
-#scrollTop {
-    position: fixed;
-    bottom: 70px;
-    right: 70px;
-    background-color: var(--verde-escuro);
-    color: white;
+.fixed-btn {
     border: none;
     padding: 15px 20px;
     border-radius: 50%;
@@ -363,6 +363,30 @@ footer a{
     z-index: 1000;
 }
 
-#scrollTop img{
+#btn-carrinho {
+    position: fixed;
+    bottom: 70px;
+    left: 70px;
+    background-color: var(--branco);
+}
+
+#scroll-top {
+    position: fixed;
+    bottom: 70px;
+    right: 70px;
+    background-color: var(--verde-escuro);
+}
+
+#scroll-top img,
+#btn-carrinho img {
     height: 4vw;
+}
+
+#qtd-carrinho {
+    position: absolute;
+    top: 31%;
+    left: 50%;
+    font-size: 1.4vw;
+    color: var(--branco);
+    font-family: steelfish;
 }

@@ -13,7 +13,7 @@ function revelaEsconde(conteudo) {
     }
 }
 
-const btn = document.getElementById('scrollTop');
+const btn = document.getElementById('scroll-top');
 
 /*window.addEventListener('scroll', () => {
     if (window.scrollY > 200) {
