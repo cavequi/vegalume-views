@@ -1,0 +1,179 @@
+@import url(../shared.css);
+
+body {
+    background-image: url(../Imagens/output-onlinepngtools.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--verde-escuro);
+    font-family: avarezo;
+    letter-spacing: 0.2vw;
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+header a {
+    color: var(--branco);
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+#logo-section {
+    width: 100%;
+    text-align: center;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+
+#logo {
+    width: 40%;
+}
+
+#nosso-restaurante {
+    background-color: var(--cinza-escuro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw;
+}
+
+.expand {
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    border-top: black solid 2px;
+    font-family: steelfish;
+    letter-spacing: 0.9vw;
+    font-size: 3vw;
+    width: 100%;
+}
+
+.expand:last-of-type {
+    border-bottom: black solid 2px;
+}
+
+.expand span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mais {
+    background: var(--cinza-escuro);
+    width: 4vw;
+    height: 4vw;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.mais span {
+    position: absolute;
+    background: black;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.mais span:first-child {
+    width: 6%;
+    height: 60%;
+    left: 47%;
+    top: 20%;
+}
+
+.mais span:last-child {
+    width: 60%;
+    height: 6%;
+    top: 47%;
+    left: 20%;
+}
+
+.mais.menos span:first-child {
+    transform: rotate(90deg);
+}
+
+
+.conteudo {
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
+    max-height: 0;
+    opacity: 0;
+    padding: 0 0;
+    margin: 0;
+}
+
+.conteudo.mostrar {
+    max-height: 200px;
+    opacity: 1;
+    padding: 1em 0;
+}
+
+#detalhes {
+    padding-right: 7vw;
+    display: inline-block;
+}
+
+#img-restaurante {
+    width: 60%;
+}
+
+#nossa-historia {
+    background-color: var(--bege);
+    text-align: center;
+    display: flex;
+}
+
+#historia {
+    background-color: var(--verde-escuro);
+    color: white;
+    padding: 2vw;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: unageo;
+    font-size: 1.6vw;
+}
+
+#titulo {
+    font-size: 2.3vw;
+    letter-spacing: 0.2vw;
+    font-family: avarezo;
+    text-decoration: underline;
+}
+
+#critica {
+    padding: 2vw;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    background-image: url('../Imagens/transparent-food.png');
+    background-size: cover;
+    background-position: center;
+    color: var(--verde-escuro);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#critica-autor {
+    font-family: avarezo;
+    letter-spacing: 0.2vw;
+    font-size: 2.3vw;
+    color: var(--verde-escuro);
+    text-decoration: underline;
+}
+
+#critica-texto {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-family: unageo-italic;
+    font-size: 1.6vw;
+}

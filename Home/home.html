@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="../shared.css">
+    <title>Vegalume - Home</title>
+</head>
+
+<body>
+    <header>
+        <a href="#nosso-restaurante">Nosso Restaurante</a>
+        <a href="www.google.com">Cardápio</a>
+        <a href="">Nossa História</a>
+        <button class="white-green-btn" id="btn-login">Entre e peça já!</button>
+    </header>
+
+    <section id="logo-section">
+        <img src="../Imagens/logo + nome-cropped.svg" id="logo">
+    </section>
+
+    <section id="nosso-restaurante">
+        <div id="detalhes">
+            <div class="expand">
+                <span>
+                    <div>Localização</div>
+                    <button class="mais" id="btn-localizacao" onclick="revelaEsconde('localizacao')">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </span>
+                <p id="p-localizacao" class="conteudo">
+                    Rua Guaipá, 678
+                    Vila Leopoldina, São Paulo
+                </p>
+            </div>
+            <div class="expand">
+                <span>
+                    <div>Horários</div>
+                    <button class="mais" id="btn-horarios" onclick="revelaEsconde('horarios')">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </span>
+                <p id="p-horarios" class="conteudo">
+                    Seg-Sex 12-22<br>
+                    Sab-Dom 17-22
+                </p>
+            </div>
+            <div class="expand">
+                <span>
+                    <div>Contatos</div>
+                    <button class="mais" id="btn-contatos" onclick="revelaEsconde('contatos')">
+                        <span></span>
+                        <span></span>
+                    </button>
+                </span>
+                <p id="p-contatos" class="conteudo">
+                    Email: vegalume0@gmail.com
+                    Instagram: @vegalume00
+                </p>
+            </div>
+        </div>
+        <img id="img-restaurante" src="../Imagens/rest-modified.png">
+    </section>
+
+    <section id="nossa-historia">
+        <div id="historia">
+            <div id="titulo">Dez Anos Iluminando a Gastronomia Vegana</div>
+            <p>
+                O Vegalume surgiu como um pequeno bistrô vegano com a missão de unir sabor, ética e criatividade.
+                Em dez anos de história, cresceu e se firmou como referência na gastronomia vegetal, encantando
+                clientes com pratos autorais, ingredientes frescos e um compromisso contínuo com a sustentabilidade.
+                Hoje, é mais que um restaurante — é um espaço de encontro e consciência alimentar.
+            </p>
+        </div>
+        <div id="critica">
+            <div id="critica-autor">
+                Caio D. Moura, crítico da Revista Sabor & Alma
+            </div>
+            <div id="critica-texto">
+                "O Vegalume prova que comida vegana pode ser surpreendente, sofisticada e profundamente acolhedora.
+                Um refúgio gastronômico onde cada prato conta uma história — e todas valem a pena."
+            </div>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
