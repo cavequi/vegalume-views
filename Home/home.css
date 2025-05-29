@@ -13,28 +13,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: var(--verde-escuro);
-    font-family: avarezo;
-    letter-spacing: 0.2vw;
-    font-size: 1.8vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-header a {
-    color: var(--branco);
-    text-decoration: none;
-}
-
-header a:hover {
-    text-decoration: underline;
-}
-
 .btn-minha-conta,
 .btn-sair {
     display: none;
