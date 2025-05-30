@@ -22,6 +22,33 @@ section:last-of-type {
     margin-bottom: 8vw;
 }
 
+#primeiro-pedido{
+    font-family: unageo;
+    font-size: 2vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+}
+
+table {
+    font-family: unageo;
+    background-color: var(--branco);
+    color: var(--verde-escuro);
+    border-collapse: collapse;
+    border-color: var(--verde-escuro);
+    display: none;
+}
+
+td,
+th {
+    border: 2px solid;
+    border-color: var(--verde-escuro);
+    font-size: 1.5vw;
+    padding-top: 0.6vw;
+    padding-bottom: 0.6vw;
+    padding-right: 0.3vw;
+    padding-left: 0.3vw;
+}
+
 form label {
     font-family: avarezo;
     color: var(--branco);
@@ -71,6 +98,16 @@ select {
 /* se cliente tiver 0 endereços:
 
 #enderecos{
+    display: none;
+}
+
+#adicione-endereco{
+    margin-top: 0;
+}*/
+
+/* se cliente tiver 0 cartoes:
+
+#cartoes{
     display: none;
 }
 
@@ -155,22 +192,22 @@ select {
     letter-spacing: 0.1vw;
 }
 
-#txtTitular{
+#txtTitular {
     width: 50%;
 }
 
-#txtBandeira{
+#txtBandeira {
     width: 25%;
 }
 
-#txtNCartao{
+#txtNCartao {
     width: 24%;
 }
 
-#txtCVV{
+#txtCVV {
     width: 5%;
 }
 
-#txtValidade{
+#txtValidade {
     width: 7%;
 }
