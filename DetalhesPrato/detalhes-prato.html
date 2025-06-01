@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Prato</title>
+    <link rel="stylesheet" href="detalhes-prato.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+
+<body>
+    <button onclick="window.history.back()" class="white-green-btn" id="voltar">Voltar</button>
+
+    <form>
+        <div id="titulo">Ótima escolha!</div>
+        <div id="nome-prato">Falafel</div>
+        <div id="descricao-prato">Bolinho crocante de grão-de-bico temperado com ervas e especiarias, servido com molho
+            tahine.</div>
+        <div id="alguma-observacao">
+            <img src="../Imagens/icons8-chat-100.png" alt="">
+            <div>Alguma observação?</div>
+        </div>
+        <textarea name="" id="txtAnotacoes" placeholder="Ex: Tirar a cebola, feijão a parte etc..."></textarea>
+        <div id="qtd-total">
+            <div>
+                <button type="button" onclick="diminuirQtd()">-</button>
+                <input type="text" id="qtd" value="1"/>
+                <button type="button" onclick="aumentarQtd()">+</button>
+            </div>
+            <div id="total">R$ 90,00</div>
+        </div>
+        <input type="submit" class="white-green-btn" value="Adicionar ao Carrinho">
+
+    </form>
+
+    <button class="fixed-btn" id="btn-carrinho">
+        <img src="../Imagens/cart.png">
+        <div id="qtd-carrinho"></div>
+    </button>
+
+    <script src="detalhes-prato.js"></script>
+</body>
+
+</html>
