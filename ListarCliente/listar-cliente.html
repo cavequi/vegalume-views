@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes Cadastrados</title>
+    <link rel="stylesheet" href="listar-cliente.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+
+<body>
+    <button onclick="window.history.back()" class="white-green-btn" id="voltar">Voltar</button>
+
+    <form>
+        <div id="titulo">Clientes Cadastrados</div>
+        <div>
+            <label>Filtro:</label><input type="text" placeholder="Id ou nome" maxlength="50" />
+        </div>
+        <div id="nenhum">Nenhum cliente encontrado!</div>
+        <table>
+            <tr>
+                <th class="id">Id</th>
+                <th class="nome">Nome</th>
+                <th class="email">Email</th>
+                <th class="telefone">Telefone</th>
+                <th class="pedidos">Pedidos</th>
+            </tr>
+            <tr>
+                <td class="id">1</td>
+                <td class="nome">Vinicius Cavequi</td>
+                <td class="email">vinicavequi@gmail.com</td>
+                <td class="telefone">(11)97652-0092</td>
+                <td class="pedidos">4</td>
+            </tr>
+            <tr>
+                <td class="id">5</td>
+                <td class="nome">Lucas Imamura</td>
+                <td class="email">lucas.imamura@gmail.com</td>
+                <td class="telefone">(11)7652-6721</td>
+                <td class="pedidos">2</td>
+            </tr>
+            <tr>
+                <td class="id">8</td>
+                <td class="nome">Halisson</td>
+                <td class="email">halisson00@gmail.com</td>
+                <td class="telefone">(12)91892-5454</td>
+                <td class="pedidos">12</td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="listar-cliente.js"></script>
+</body>
+
+</html>
