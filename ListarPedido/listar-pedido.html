@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de Pedidos</title>
+    <link rel="stylesheet" href="listar-pedido.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+
+<body>
+    <button onclick="window.history.back()" class="white-green-btn" id="voltar">Voltar</button>
+
+    <form>
+        <div id="titulo">Histórico de Pedidos</div>
+        <div>
+            <label>Filtro:</label><input type="text" placeholder="N°, cliente, prato, ou data" maxlength="50" />
+        </div>
+        <div id="nenhum">Nenhum pedido encontrado!</div>
+        <table>
+            <tr>
+                <th class="numero">N°</th>
+                <th class="pratos">Pratos</th>
+                <th class="valor-total">Valor Total</th>
+                <th class="cliente">Cliente</th>
+                <th class="funcionario">Funcionário</th>
+                <th class="data">Data</th>
+                <th class="status">Status</th>
+            </tr>
+            <tr>
+                <td class="numero">234</td>
+                <td class="pratos">Falafel (1)<br>Feijoada Vegana (1)<br>aksgdyasdfagysdufasdy (1)</td>
+                <td class="valor-total">$120</td>
+                <td class="cliente">Vinicius Cavequi</td>
+                <td class="funcionario">Josna</td>
+                <td class="data">12/06/2020</td>
+                <td class="status">Preparação</td>
+            </tr>
+            <tr>
+                <td class="numero">N°</td>
+                <td class="pratos">Pratos</td>
+                <td class="valor-total">Valor Total</td>
+                <td class="cliente">Cliente</td>
+                <td class="funcionario">Funcionário</td>
+                <td class="data">Data</td>
+                <td class="status">Status</td>
+            </tr>
+            <tr>
+                <td class="numero">N°</td>
+                <td class="pratos">Pratos</td>
+                <td class="valor-total">Valor Total</td>
+                <td class="cliente">Cliente</td>
+                <td class="funcionario">Funcionário</td>
+                <td class="data">Data</td>
+                <td class="status">Status</td>
+            </tr>
+            <tr>
+                <td class="numero">N°</td>
+                <td class="pratos">Pratos</td>
+                <td class="valor-total">Valor Total</td>
+                <td class="cliente">Cliente</td>
+                <td class="funcionario">Funcionário</td>
+                <td class="data">Data</td>
+                <td class="status">Status</td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="listar-pedido.js"></script>
+</body>
+
+</html>
