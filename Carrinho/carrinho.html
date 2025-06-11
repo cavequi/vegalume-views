@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Carrinho</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+
+<body>
+    <a class="white-green-btn" id="voltar">Voltar</a>
+    <form id="main">
+        <div id="titulo">Carrinho</div>
+        <div>
+            <div id="nome-prato">Falafel</div>
+            <div id="descricao-prato">Bolinho crocante de grão-de-bico temperado com ervas e especiarias, servido com
+                molho
+                tahine.</div>
+            <div id="valor-qtd">
+                <div>
+                    <button type="button" onclick="diminuirQtd()">-</button>
+                    <input type="text" id="qtd" value="1" />
+                    <button type="button" onclick="aumentarQtd()">+</button>
+                </div>
+                <div>$60</div>
+            </div>
+        </div>
+         <div id="opcao-pagamento">
+            <img src="../Imagens/icons8-card-100.png" alt="">
+            <div>Opções de Pagamento</div>
+        </div>
+        <select id="selPagamento">
+            <option value="">Débito MasterCard****7777</option>
+            <option value="">Pix</option>
+            <option value="">Dinheiro</option>
+        </select>
+         <div id="opcap-endereco">
+            <img src="../Imagens/icons8-location-100.png" alt="">
+            <div>Opções de Endereço</div>
+        </div>
+        <select id="selEndereco">
+            <option value="">Rua Josnelândia, 123</option>
+            <option value="">Rua Juqueira, 321</option>
+        </select>
+
+        <input type="submit" class="white-green-btn" value="Fazer Pedido">
+    </form>
+
+    <link rel="stylesheet" href="carrinho.js">
+</body>
+
+</html>
