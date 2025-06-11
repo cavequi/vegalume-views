@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo, Vinícius</title>
+    <link rel="stylesheet" href="editar-cardapio.css">
+    <link rel="stylesheet" href="../shared.css">
+</head>
+
+<body>
+    <a class="white-green-btn" id="voltar">Voltar</a>
+
+    <div id="main">
+        <div id="titulo">Editar Cardápio</div>
+
+        <div class="table-div" id="ativos">
+            <div class="table-title">Pratos Ativos</div>
+            <table>
+                <tr>
+                    <th class="id">Id</th>
+                    <th class="nome">Nome</th>
+                    <th class="descricao">Descrição</th>
+                    <th class="preco">Preço</th>
+                </tr>
+                <tr>
+                    <td class="id">1</td>
+                    <td class="nome">Feijoada Vegana</td>
+                    <td class="descricao">adgsyuisdabsdiaysd aysdgfautdfagdsuyt ays dgaustdyf utayfsduoadstf dfutaisd</td>
+                    <td class="preco">R$35</td>
+                    <td class="img-td">
+                        <a><img src="../Imagens/icons8-edit-100.png"></a>
+                        <a><img src="../Imagens/icons8-hide-100.png"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="id">2</td>
+                    <td class="pratos">Ratatouille</td>
+                    <td class="descricao">ajsdhaiysdg easydg aysd gaysdiowiçpoahjds uasgsa askhdygaysd</td>
+                    <td class="preco">R$35</td>
+                    <td class="img-td">
+                        <a><img src="../Imagens/icons8-edit-100.png"></a>
+                        <a><img src="../Imagens/icons8-hide-100.png"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-div" id="ocultos">
+            <div class="table-title">Pratos Ocultos</div>
+            <table>
+                <tr>
+                    <th class="id">Id</th>
+                    <th class="nome">Nome</th>
+                    <th class="descricao">Descrição</th>
+                    <th class="preco">Preço</th>
+                </tr>
+                <tr>
+                    <td class="id">1</td>
+                    <td class="nome">Feijoada Vegana</td>
+                    <td class="descricao">adgsyuisdabsdiaysd aysdgfautdfagdsuyt ays dgaustdyf utayfsduoadstf dfutaisd</td>
+                    <td class="preco">R$35</td>
+
+                    <td class="img-td">
+                        <a><img src="../Imagens/icons8-edit-100.png"></a>
+                        <a><img src="../Imagens/icons8-eye-100.png"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="id">2</td>
+                    <td class="pratos">Ratatouille</td>
+                    <td class="cliente">ajsdhaiysdg easydg aysd gaysdiowiçpoahjds uasgsa askhdygaysd</td>
+                    <td class="preco">R$35</td>
+                    <td class="img-td">
+                        <a><img src="../Imagens/icons8-edit-100.png"></a>
+                        <a><img src="../Imagens/icons8-eye-100.png"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <form id="frm-adicionar-prato">
+            <div id="adicione-prato">Adicione um novo prato:</div>
+            <div id="textboxes">
+                <div>
+                    <label>Nome do Prato </label><input type="text" id="txtNome" required maxlength="35">
+                    <label>Preço </label><input class="float" type="text" id="txtPreco" required maxlength="7">
+                </div>
+                <div>                    
+                    <label>Descrição do Prato </label>
+                </div>
+                <div id="txtDescricao-div">
+                    <textarea id="txtDescricao"></textarea>
+                </div>
+                <div>
+                    <label>Valor Calórico </label><input class="numerico" type="text" id="txtValorCalorico" required maxlength="6">
+                    <label>Peso (g) </label><input class="numerico" type="text" id="txtPeso" required maxlength="5">
+                    <label>Pessoas Servidas </label><input class="numerico" type="text" id="txtPessoas" required maxlength="1">
+                </div>
+            </div>
+            <input type="submit" class="white-green-btn" id="adicionar-cartao" value="Adicionar" />
+        </form>
+        </section>
+    </div>
+
+    <script src="editar-cardapio.js"></script>
+</body>
+
+</html>
